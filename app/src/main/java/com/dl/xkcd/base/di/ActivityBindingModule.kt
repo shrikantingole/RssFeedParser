@@ -1,24 +1,8 @@
 package com.dl.xkcd.base.di
 
-import com.ballchalu.ui.bc_coins.BcCoinModule
-import com.ballchalu.ui.contest.ContestModule
-import com.ballchalu.ui.create_bet.CreateBetModule
-import com.ballchalu.ui.how_to_play.HowToPlayModule
-import com.ballchalu.ui.ledgers.BcCoinsLedgersModule
-import com.ballchalu.ui.login.LoginModule
-import com.ballchalu.ui.login.container.LoginActivity
-import com.ballchalu.ui.login.forget.ForgetPasswordModule
-import com.ballchalu.ui.login.signin.SignInModule
-import com.ballchalu.ui.login.signup.SignUpModule
-import com.ballchalu.ui.match.details.MatchDetailsModule
-import com.ballchalu.ui.match_listing.MatchListingModule
-import com.ballchalu.ui.match_listing.recent.DeclaredMatchModule
-import com.ballchalu.ui.navigation.NavigationActivity
-import com.ballchalu.ui.navigation.NavigationModule
-import com.ballchalu.ui.splash.SplashActivity
-import com.ballchalu.ui.splash.SplashModule
-import com.ballchalu.ui.winners.WinnerModule
 import com.ccpp.shared.core.di.ActivityScoped
+import com.dl.xkcd.ui.home.HomeModule
+import com.dl.xkcd.ui.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -37,37 +21,9 @@ abstract class ActivityBindingModule {
     @ActivityScoped
     @ContributesAndroidInjector(
         modules = [
-            SplashModule::class
+            HomeModule::class
         ]
     )
-    internal abstract fun mainActivity(): SplashActivity
+    internal abstract fun mainActivity(): MainActivity
 
-
-    @ActivityScoped
-    @ContributesAndroidInjector(
-        modules = [
-            LoginModule::class,
-            SignInModule::class,
-            SignUpModule::class,
-            ForgetPasswordModule::class
-        ]
-    )
-    internal abstract fun loginActivity(): LoginActivity
-
-    @ActivityScoped
-    @ContributesAndroidInjector(
-        modules = [
-            NavigationModule::class,
-            MatchDetailsModule::class,
-            ContestModule::class,
-            BcCoinsLedgersModule::class,
-            BcCoinModule::class,
-            MatchListingModule::class,
-            CreateBetModule::class,
-            WinnerModule::class,
-            DeclaredMatchModule::class,
-            HowToPlayModule::class
-        ]
-    )
-    internal abstract fun navigationActivity(): NavigationActivity
 }

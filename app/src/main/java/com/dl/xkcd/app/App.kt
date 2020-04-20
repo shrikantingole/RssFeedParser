@@ -1,11 +1,8 @@
 package com.dl.xkcd.app
 
-import com.ballchalu.BuildConfig
-import com.ballchalu.R
-import com.ballchalu.base.di.DaggerAppComponent
-import com.ballchalu.mqtt.MqttConnection
 import com.dl.xkcd.BuildConfig
 import com.dl.xkcd.R
+import com.dl.xkcd.base.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import io.github.inflationx.calligraphy3.CalligraphyConfig
@@ -13,7 +10,6 @@ import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
 import timber.log.Timber
 import timber.log.Timber.DebugTree
-import javax.inject.Inject
 
 
 class App : DaggerApplication() {

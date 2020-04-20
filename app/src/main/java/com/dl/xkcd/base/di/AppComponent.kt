@@ -1,8 +1,8 @@
 package com.dl.xkcd.base.di
 
-import com.ballchalu.application.App
 import com.ccpp.shared.core.di.ViewModelModule
 import com.ccpp.shared.network.NetworkModule
+import com.dl.xkcd.app.App
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
