@@ -14,55 +14,12 @@
         android:layout_height="match_parent"
         tools:context=".ui.main.MainActivity">
 
-        <LinearLayout
-            android:id="@+id/llBtnTOp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_margin="10dp">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <Button
-                    android:id="@+id/btnTopPrevious"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/round"
-                    android:paddingLeft="@dimen/_5sdp"
-                    android:paddingRight="@dimen/_5sdp"
-                    android:text="@string/prev"
-                    android:textColor="@color/white" />
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <Button
-                    android:id="@+id/btnTopNext"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/round"
-                    android:paddingLeft="@dimen/_5sdp"
-                    android:paddingRight="@dimen/_5sdp"
-                    android:text="Next >"
-                    android:textColor="@color/white" />
-            </RelativeLayout>
-        </LinearLayout>
 
         <ImageView
             android:id="@+id/ivImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/llBtn"
-            android:layout_below="@+id/llBtnTOp"
             tools:background="@android:color/darker_gray" />
 
         <LinearLayout

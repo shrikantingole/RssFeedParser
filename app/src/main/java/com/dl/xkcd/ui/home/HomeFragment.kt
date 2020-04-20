@@ -45,8 +45,6 @@ class HomeFragment : BaseFragment() {
         })
         binding.btnPrevious.setOnClickListener { viewModel.getNextImage() }
         binding.btnNext.setOnClickListener { viewModel.getPreImage() }
-        binding.btnTopPrevious.setOnClickListener { viewModel.getNextImage() }
-        binding.btnTopNext.setOnClickListener { viewModel.getPreImage() }
         viewModel.callRssFeedAsync()
 
     }
