@@ -1,0 +1,3 @@
+rootProject.name='XKCD'
+include ':app'
+include ':shared'
