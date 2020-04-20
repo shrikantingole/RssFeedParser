@@ -1,16 +1,20 @@
 package com.ccpp.shared.domain.model
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-class RssItem {
 
-    val title: String? = null
+@Parcelize
+class RssItem : Parcelable {
 
-    val link: String? = null
+    var title: String? = null
 
-    val pubDate: String? = null
+    var link: String? = null
 
-    val description: String? = null
+    var pubDate: String? = null
 
-    val guid: String? = null
+    var description: String? = null
+
+    var guid: String? = null
 
 }
